@@ -1,11 +1,15 @@
 // Third file that react will read/run.
 import './App.css'
-import ViteIntro from "./components/ViteIntro/ViteIntro.tsx";
+import ClassComponent from "./components/ClassComponent";
+import FunctionalComponent from "./components/FunctionalComponent.tsx";
+import ArrowFunctionalComponent from "./components/ViteIntro/ArrowFunctionalComponent.tsx";
 
 function App() {
   return (
       <>
-          <ViteIntro/>
+          <ClassComponent/>
+          <FunctionalComponent/>
+          <ArrowFunctionalComponent/>
       </>
   )
 }
