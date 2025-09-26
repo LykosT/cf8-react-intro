@@ -10,3 +10,4 @@ const ArrowFunctionalComponentWithProps=({title}: Props) => {
     )
 }
 export default ArrowFunctionalComponentWithProps
+
