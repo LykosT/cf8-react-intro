@@ -8,7 +8,8 @@ import Layout from "./components/Layout.tsx";
 // import ArrowFunctionalComponentWithPropsType from "./components/ArrowFunctionalComponentWithPropsType.tsx";
 // import Card from "./components/Card.tsx";
 // import FunctionalComponentWithState from "./components/FunctionalComponentWithState.tsx";
-import ClassComponentWithState from "./components/ClassComponentWithState.tsx";
+// import ClassComponentWithState from "./components/ClassComponentWithState.tsx";
+import Counter from "./components/Counter.tsx";
 
 function App() {
   return (
@@ -45,7 +46,8 @@ function App() {
               {/*     />*/}
 
               {/*<FunctionalComponentWithState/>*/}
-              <ClassComponentWithState/>
+              {/*<ClassComponentWithState/>*/}
+              <Counter/>
           </Layout>
       </>
   )
