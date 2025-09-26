@@ -1,4 +1,5 @@
 import {useState} from "react";
+import Button from "./Button.tsx";
 
 const Counter = () => {
 
@@ -17,31 +18,65 @@ const Counter = () => {
     }
     
     return (
-        <>
-            <h1 className="text-center my-12 text-2xl">Count is <strong
-                className={count < 0 ? "text-red-500"
-                    : count > 0
-                    ? "text-green-500"
-                    : "text-gray-800"}
-            >{count}</strong></h1>
-            <div className="text-center space-x-4">
-                <button className="bg-green-600 text-white py-2 px-4 rounded-md"
-                        onClick={increaseCount}>
-                    Increase
-                </button>
-                <button className="bg-gray-500 text-white py-2 px-4 rounded-md "
-                        onClick={decreaseCount}>
-                    Decrease
-                </button>
-                <button className="bg-red-500 disabled:bg-cf-dark-gray text-white py-2 px-4 rounded-md "
-                        onClick={resetCount}
-                        disabled={count === 0}
-                >
-                    Reset
-                </button>
-            </div>
 
+        <>
+            <h1 className="text-center my-12 text-2xl">Count:
+                <strong className={count < 0 ?
+                    "text-red-500" : count > 0 ?
+                    "text-green-500" :
+                    "text-gray-800"}>
+                    {count}
+                </strong>
+            </h1>
+            <div className="text-center space-x-4">
+                <Button
+                title="Increase"
+                color="bg-green-600"
+                onClick={increaseCount}
+                />
+
+                <Button
+                title="Decrease"
+                color="bg-gray-500"
+                onClick={decreaseCount}
+                />
+
+                <Button
+                title="Reset"
+                color="bg-red-500"
+                onClick={resetCount}
+                />
+            </div>
         </>
+
+
+
+
+        // <>
+        //     <h1 className="text-center my-12 text-2xl">Count is <strong
+        //         className={count < 0 ? "text-red-500"
+        //             : count > 0
+        //             ? "text-green-500"
+        //             : "text-gray-800"}
+        //     >{count}</strong></h1>
+        //     <div className="text-center space-x-4">
+        //         <button className="bg-green-600 text-white py-2 px-4 rounded-md"
+        //                 onClick={increaseCount}>
+        //             Increase
+        //         </button>
+        //         <button className="bg-gray-500 text-white py-2 px-4 rounded-md "
+        //                 onClick={decreaseCount}>
+        //             Decrease
+        //         </button>
+        //         <button className="bg-red-500 disabled:bg-cf-dark-gray text-white py-2 px-4 rounded-md "
+        //                 onClick={resetCount}
+        //                 disabled={count === 0}
+        //         >
+        //             Reset
+        //         </button>
+        //     </div>
+        //
+        // </>
     )
 }
 export default Counter;
