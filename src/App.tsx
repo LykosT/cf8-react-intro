@@ -9,7 +9,11 @@ import Layout from "./components/Layout.tsx";
 // import Card from "./components/Card.tsx";
 // import FunctionalComponentWithState from "./components/FunctionalComponentWithState.tsx";
 // import ClassComponentWithState from "./components/ClassComponentWithState.tsx";
-import Counter from "./components/Counter.tsx";
+//import Counter from "./components/Counter.tsx";
+//import NameChanger from "./components/NameChanger.tsx";
+//import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
+//import CounterAdvanced from "./components/CounterAdvanced.tsx";
+import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
 // import Button from "./components/Button.tsx";
 
 function App() {
@@ -48,7 +52,11 @@ function App() {
 
               {/*<FunctionalComponentWithState/>*/}
               {/*<ClassComponentWithState/>*/}
-              <Counter/>
+              {/*<Counter/>*/}
+              {/*<NameChanger/>*/}
+              {/*<CounterWithMoreStates/>*/}
+              {/*<CounterAdvanced/>*/}
+              <CounterWithCustomHook/>
 
           </Layout>
       </>

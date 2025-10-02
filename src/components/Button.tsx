@@ -1,8 +1,7 @@
 type Props = {
-    //children: React.ReactNode
     title: string;
     color: string;
-    onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
+    onClick: () => void;
 };
 
 const Button = ({ title, color, onClick }: Props) => {
