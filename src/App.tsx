@@ -18,7 +18,8 @@ import Layout from "./components/Layout.tsx";
 // import Button from "./components/Button.tsx";
 //import {useEffect} from "react";
 //import Timer from "./components/Timer.tsx";
-import WindowSize from "./components/WindowSize.tsx";
+//import WindowSize from "./components/WindowSize.tsx";
+import FocusInput from "./components/FocusInput.tsx";
 
 
 function App() {
@@ -88,7 +89,8 @@ function App() {
               {/*<CounterWithCustomHook/>*/}
               {/*<NameChangerWithEffect/>*/}
               {/*<Timer/>*/}
-              <WindowSize/>
+              {/*<WindowSize/>*/}
+              <FocusInput/>
 
           </Layout>
       </>
