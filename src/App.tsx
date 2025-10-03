@@ -17,7 +17,8 @@ import Layout from "./components/Layout.tsx";
 //import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
 // import Button from "./components/Button.tsx";
 //import {useEffect} from "react";
-import Timer from "./components/Timer.tsx";
+//import Timer from "./components/Timer.tsx";
+import WindowSize from "./components/WindowSize.tsx";
 
 
 function App() {
@@ -86,7 +87,8 @@ function App() {
               {/*<CounterAdvanced/>*/}
               {/*<CounterWithCustomHook/>*/}
               {/*<NameChangerWithEffect/>*/}
-              <Timer/>
+              {/*<Timer/>*/}
+              <WindowSize/>
 
           </Layout>
       </>
