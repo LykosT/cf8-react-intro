@@ -12,11 +12,12 @@ const NameChanger = () => {
         <>
             <h1 className="text-center text-xl mt-12">Hello, {name || "Stranger"}</h1>
             <div className="text-center mt-4">
-                <input type="text"
-                //value={}
+                <input
+                    type="text"
+                    value={name}
                     onChange={handleChange}
                     placeholder="Enter your name"
-                       className="border px-4 py-2"
+                    className="border px-4 py-2"
                 />
             </div>
         </>

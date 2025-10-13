@@ -1,5 +1,5 @@
 // Third file that react will read/run.
-import Layout from "./components/Layout.tsx";
+//import Layout from "./components/Layout.tsx";
 //import NameChangerWithEffect from "./components/NameChangerWithEffect.tsx";
 // import ClassComponent from "./components/ClassComponent";
 // import FunctionalComponent from "./components/FunctionalComponent.tsx";
@@ -22,7 +22,13 @@ import Layout from "./components/Layout.tsx";
 //import FocusInput from "./components/FocusInput.tsx";
 //import PreviousValue from "./components/PreviousValue.tsx";
 //import CounterWithRef from "./components/CounterWithRef.tsx";
-import TimerWithRef from "./components/TimerWithRef.tsx";
+//import TimerWithRef from "./components/TimerWithRef.tsx";
+import {BrowserRouter, Route, Routes} from "react-router";
+import HomePage from "./components/pages/HomePage.tsx";
+import NameChanger from "./components/NameChanger.tsx";
+import Timer from "./components/Timer.tsx";
+import ControlledInput from "./components/ControlledInput.tsx";
+import UncontrolledInput from "./components/UncontrolledInput.tsx";
 
 
 function App() {
@@ -76,28 +82,53 @@ function App() {
       // </>
 
       <>
-          <Layout>
+          {/*<Layout>*/}
 
-              {/*<ArrowFunctionalComponentWithProps title={"Hello Coding!"} />*/}
-              {/*     <ArrowFunctionalComponentWithPropsType*/}
-              {/*         title="Is an Arrow Functional Component With Props!"*/}
-              {/*         description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque ducimus eos."*/}
-              {/*     />*/}
-              {/*<FunctionalComponentWithState/>*/}
-              {/*<ClassComponentWithState/>*/}
-              {/*<Counter/>*/}
-              {/*<NameChanger/>*/}
-              {/*<CounterWithMoreStates/>*/}
-              {/*<CounterAdvanced/>*/}
-              {/*<CounterWithCustomHook/>*/}
-              {/*<NameChangerWithEffect/>*/}
-              {/*<Timer/>*/}
-              {/*<WindowSize/>*/}
-              {/*<FocusInput/>*/}
-              {/*<PreviousValue/>*/}
-              {/*<CounterWithRef/>*/}
-              <TimerWithRef/>
-          </Layout>
+          {/*    /!*<ArrowFunctionalComponentWithProps title={"Hello Coding!"} />*!/*/}
+          {/*    /!*     <ArrowFunctionalComponentWithPropsType*!/*/}
+          {/*    /!*         title="Is an Arrow Functional Component With Props!"*!/*/}
+          {/*    /!*         description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque ducimus eos."*!/*/}
+          {/*    /!*     />*!/*/}
+          {/*    /!*<FunctionalComponentWithState/>*!/*/}
+          {/*    /!*<ClassComponentWithState/>*!/*/}
+          {/*    /!*<Counter/>*!/*/}
+          {/*    /!*<NameChanger/>*!/*/}
+          {/*    /!*<CounterWithMoreStates/>*!/*/}
+          {/*    /!*<CounterAdvanced/>*!/*/}
+          {/*    /!*<CounterWithCustomHook/>*!/*/}
+          {/*    /!*<NameChangerWithEffect/>*!/*/}
+          {/*    /!*<Timer/>*!/*/}
+          {/*    /!*<WindowSize/>*!/*/}
+          {/*    /!*<FocusInput/>*!/*/}
+          {/*    /!*<PreviousValue/>*!/*/}
+          {/*    /!*<CounterWithRef/>*!/*/}
+          {/*    <TimerWithRef/>*/}
+          {/*</Layout>*/}
+
+          <BrowserRouter>
+              <Routes>
+                  <Route index element={<HomePage />} />
+
+                  {/*<Route path="name-changer" element={<NameChanger />} />*/}
+                  {/*<Route path="timer" element={<Timer />} />*/}
+
+                  <Route path="examples?">
+                      <Route path="name-changer" element={<NameChanger/>}/>
+                      <Route path="timer" element={<Timer/>}/>
+                      <Route path="controlled-input" element={<ControlledInput/>}/>
+                      <Route path="uncontrolled-input" element={<UncontrolledInput/>}/>
+                  </Route>
+
+                  {/* with ":" declare that userId is a variable */}
+                  {/*<Route path="users/:userID" element={<UserPage/>}/>*/}
+
+                  {/* If user type in url https://domain/files/mypdf.pdg this search for the pdf and if exist download it */}
+                  {/*<Route path="files/*" element={<FilePage/>}/> */}
+
+
+              </Routes>
+
+          </BrowserRouter>
       </>
   )
 }
