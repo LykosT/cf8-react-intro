@@ -4,8 +4,7 @@ import {useEffect} from "react";
 const UserPage = () => {
 
     const { userId } = useParams();
-
-    const [ searchParams, setSearchParams ] = useSearchParams();
+    const [ searchParams, ] = useSearchParams();
     const name = searchParams.get("name");
 
     useEffect(() => {
