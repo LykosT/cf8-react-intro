@@ -29,6 +29,7 @@ import NameChanger from "./components/NameChanger.tsx";
 import Timer from "./components/Timer.tsx";
 import ControlledInput from "./components/ControlledInput.tsx";
 import UncontrolledInput from "./components/UncontrolledInput.tsx";
+import UserPage from "./components/pages/UserPage.tsx";
 
 
 function App() {
@@ -119,6 +120,12 @@ function App() {
                       <Route path="uncontrolled-input" element={<UncontrolledInput/>}/>
                   </Route>
 
+                  <Route path="users">
+                      <Route path=":userId">
+                          <Route index element={<UserPage/>}/>
+                          {/*<Route path="accounts" element={<UserAccountPage/>}/>*/}
+                      </Route>
+                  </Route>
                   {/* with ":" declare that userId is a variable */}
                   {/*<Route path="users/:userID" element={<UserPage/>}/>*/}
 
@@ -127,7 +134,6 @@ function App() {
 
 
               </Routes>
-
           </BrowserRouter>
       </>
   )
