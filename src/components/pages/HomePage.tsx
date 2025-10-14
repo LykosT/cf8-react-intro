@@ -10,7 +10,7 @@ const HomePage = () => {
         {path: "/examples/uncontrolled-input", label: "Uncontrolled Input example"},
         {path: "/examples/multifield-form", label: "Multifield Form Example"},
         {path: "/examples/multifield-form-with-validation", label: "Multifield Form with Validation Example"},
-
+        {path: "/examples/multifield-form-with-zod", label: "Multifield Form with Zod Example"},
     ]
 
     return (
