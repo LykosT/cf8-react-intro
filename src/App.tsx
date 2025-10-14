@@ -30,6 +30,7 @@ import Timer from "./components/Timer.tsx";
 import ControlledInput from "./components/ControlledInput.tsx";
 import UncontrolledInput from "./components/UncontrolledInput.tsx";
 import UserPage from "./components/pages/UserPage.tsx";
+import MultiFfieldForm from "./components/MultifieldForm.tsx";
 
 
 function App() {
@@ -118,6 +119,7 @@ function App() {
                       <Route path="timer" element={<Timer/>}/>
                       <Route path="controlled-input" element={<ControlledInput/>}/>
                       <Route path="uncontrolled-input" element={<UncontrolledInput/>}/>
+                      <Route path="multifield-form" element={<MultiFfieldForm/>}/>
                   </Route>
 
                   <Route path="users">

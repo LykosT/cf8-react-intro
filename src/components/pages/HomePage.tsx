@@ -8,6 +8,7 @@ const HomePage = () => {
         {path: "/examples/timer", label: "Timer example"},
         {path: "/examples/controlled-input", label: "Controlled Input example"},
         {path: "/examples/uncontrolled-input", label: "Uncontrolled Input example"},
+        {path: "/examples/multifield-form", label: "Multifield Form Example"},
 
     ]
 
