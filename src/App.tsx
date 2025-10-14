@@ -30,7 +30,8 @@ import Timer from "./components/Timer.tsx";
 import ControlledInput from "./components/ControlledInput.tsx";
 import UncontrolledInput from "./components/UncontrolledInput.tsx";
 import UserPage from "./components/pages/UserPage.tsx";
-import MultiFfieldForm from "./components/MultifieldForm.tsx";
+import MultifieldFormWithValidation from "./components/MultifieldFormWithValidation.tsx";
+import MultifieldForm from "./components/MultifieldForm.tsx";
 
 
 function App() {
@@ -119,7 +120,8 @@ function App() {
                       <Route path="timer" element={<Timer/>}/>
                       <Route path="controlled-input" element={<ControlledInput/>}/>
                       <Route path="uncontrolled-input" element={<UncontrolledInput/>}/>
-                      <Route path="multifield-form" element={<MultiFfieldForm/>}/>
+                      <Route path="multifield-form" element={<MultifieldForm/>}/>
+                      <Route path="multifield-form-with-validation" element={<MultifieldFormWithValidation/>}/>
                   </Route>
 
                   <Route path="users">

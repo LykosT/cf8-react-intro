@@ -9,6 +9,7 @@ const HomePage = () => {
         {path: "/examples/controlled-input", label: "Controlled Input example"},
         {path: "/examples/uncontrolled-input", label: "Uncontrolled Input example"},
         {path: "/examples/multifield-form", label: "Multifield Form Example"},
+        {path: "/examples/multifield-form-with-validation", label: "Multifield Form with Validation Example"},
 
     ]
 
