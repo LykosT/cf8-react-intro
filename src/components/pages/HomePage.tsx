@@ -11,6 +11,7 @@ const HomePage = () => {
         {path: "/examples/multifield-form", label: "Multifield Form Example"},
         {path: "/examples/multifield-form-with-validation", label: "Multifield Form with Validation Example"},
         {path: "/examples/multifield-form-with-zod", label: "Multifield Form with Zod Example"},
+        {path: "/examples/multifield-form-with-hook-form", label: "Multifield Form with Hook Form Example"},
     ]
 
     return (
